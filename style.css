@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: #1d2a35;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row-reverse wrap;
+}
+
+.cart {
+  width: 15%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.cart-header,
+.cart-content,
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item {
+  color: #2196f3;
+  margin: 15px 0;
+}
+
+.cart-header,
+.cart-content,
+.cart-footer {
+  padding: 25px;
+}
+
+.cart-item-price {
+  color: #808080;
+  text-align: end;
+  margin: 15px 0;
+}
+
+hr {
+  border-color: #111;
+  margin: 15px 0;
+  width: 98%;
+  transform: translateX(1%);
+}
+
+.dollar-symbol {
+  font-size: 24px;
+}
+
+.bill-details {
+  background-color: #f2f2f2;
+  padding: 25px;
+  width: 70%;
+  display: flex;
+}
+
+.stateZip {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stateDiv,
+.zipDiv {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.form-input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  width: 90%;
+}
+
+.form-label {
+  margin: 25px 10px 15px;
+}
+
+.logos img {
+  width: 75px;
+  height: 55px;
+}
+
+#state,
+#zip,
+#expYear,
+#cvv {
+  width: 100%;
+}
+
+.form-check-input {
+  zoom: 1.5;
+  margin: 25px 0;
+}
+
+.submitBtn {
+  width: 190%;
+  border: none;
+  background-color: #555;
+  cursor: pointer;
+  position: relative;
+  z-index: 25;
+  padding: 25px;
+  color: #f2f2f2;
+}
+
+.submitBtn:hover {
+  background-color: #808080;
+}
+
+@media (max-width: 1024px) {
+  * {
+    font-size: 16px;
+  }
+  .bill-details {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .form-label,
+  .form-input {
+    max-width: 190%;
+  }
+  .container {
+    padding: 25px;
+    height: auto;
+    flex-direction: column;
+  }
+  .submitBtn {
+    width: 100%;
+  }
+  .billing-address {
+    margin-top: 50px;
+  }
+  .cart {
+    min-width: 100%;
+    margin: 25px 0;
+  }
+}
+
+.form-input-group {
+  max-width: 190%;
+}
